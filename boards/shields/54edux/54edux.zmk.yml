@@ -1,0 +1,12 @@
+file_format: "1"
+id: 54edux
+name: 54-elephant-dux
+type: shield
+url: https://github.com/BartShoot/zmk-config-54-elephant-dux
+requires:
+  - pro_micro
+features:
+  - keys
+siblings:
+  - 54edux_left
+  - 54edux_right

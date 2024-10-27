@@ -1,0 +1,6 @@
+config SHIELD_54EDUX_LEFT
+	def_bool $(shields_list_contains, 54edux_left)
+
+config SHIELD_54EDUX_RIGHT
+	def_bool $(shields_list_contains, 54edux_right)
+

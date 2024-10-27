@@ -1,0 +1,16 @@
+if SHIELD_54EDUX_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "54edux"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_54EDUX_LEFT || SHIELD_54EDUX_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
