@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "54edux-layouts.dtsi"
 
 / {
 	kscan0: kscan0 {
