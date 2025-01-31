@@ -7,6 +7,7 @@ requires:
   - pro_micro
 features:
   - keys
+  - studio
 siblings:
   - 54edux_left
   - 54edux_right

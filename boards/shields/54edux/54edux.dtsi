@@ -24,10 +24,10 @@
 		compatible = "zmk,physical-layout";
 		display-name = "Default Layout";
 		transform = <&default_transform>;
-		kscan = <&kscan0>;
 	};
 
 	chosen {
-		zmk,physical-layout = &default_layout;
+		zmk,kscan = <&kscan0>;
+		zmk,physical-layout = &physical_layout0;
 	};
 };
