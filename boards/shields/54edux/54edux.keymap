@@ -1,5 +1,3 @@
-#define ZMK_BEHAVIORS_KEEP_ALL
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -28,7 +26,7 @@
 		symbol_layer {
 			status = "reserved";
 		};
-		
+
 		media_layer {
 			status = "reserved";
 		};
