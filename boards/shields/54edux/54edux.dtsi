@@ -21,12 +21,6 @@
 		>;
 	};
 
-	default_layout: default_layout {
-		compatible = "zmk,physical-layout";
-		display-name = "Default Layout";
-		transform = <&default_transform>;
-	};
-
 	chosen {
 		zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
