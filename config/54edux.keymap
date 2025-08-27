@@ -16,27 +16,63 @@
 		};
 		
 		numpad_layer {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 
 		function_layer {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 
 		symbol_layer {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 
 		media_layer {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 		
 		spare_layer1 {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 
 		spare_layer2 {
-			status = "reserved";
+			bindings = <
+				&trans    &trans   &trans   &trans    &trans    &trans			&trans    &trans    &trans    &trans    &trans &trans
+				&trans   &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans     &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans     &trans     &trans  &trans
+				&trans &trans    &trans    &trans     &trans     &trans 			&trans     &trans     &trans	 &trans   &trans  &trans
+							       			&trans  &trans &trans		&trans  &trans  &trans 
+			>;
 		};
 	};
 };
