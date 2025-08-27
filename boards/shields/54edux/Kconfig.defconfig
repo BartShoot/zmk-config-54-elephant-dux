@@ -13,4 +13,7 @@ if SHIELD_54EDUX_LEFT || SHIELD_54EDUX_RIGHT
 config ZMK_SPLIT
 	default y
 
+config ZMK_SLEEP
+	default y
+
 endif
