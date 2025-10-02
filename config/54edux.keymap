@@ -4,6 +4,20 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_alt_l {
+            bindings = <&kp RALT>;
+            key-positions = <28 27>;
+        };
+
+        combo_alt_r {
+            bindings = <&kp RALT>;
+            key-positions = <31 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,13 +27,13 @@
 &kp TAB    &kp Q   &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U           &kp I           &kp O         &kp P         &kp BSPC
 &kp LCTRL  &kp A   &kp S         &kp D         &kp F         &kp G           &kp H         &kp J           &kp K           &kp L         &kp SEMI      &kp SQT
 &kp LSHFT  &kp Z   &kp X         &kp C         &kp V         &kp B           &kp N         &kp M           &kp COMMA       &kp DOT       &kp FSLH      &kp ENTER
-                                 &kp RALT      &lt 4 SPACE   &lt 1 LCTRL     &lt 3 ESC     &kp LEFT_SHIFT  &lt 2 LEFT_GUI
+                                 &kp LALT      &lt 4 SPACE   &lt 1 LCTRL     &lt 3 ESC     &kp LEFT_SHIFT  &lt 2 LEFT_GUI
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans  &trans          &trans           &trans                &trans                 &trans       &trans         &trans            &trans             &trans         &trans            &trans
+&kp F1  &kp F2          &kp F3           &kp F4                &kp F5                 &kp F6       &kp F7         &kp F8            &kp F9             &kp F10        &kp F11           &kp F12
 &trans  &kp AT_SIGN     &kp ASTERISK     &kp MINUS             &kp PLUS               &kp SLASH    &kp BACKSLASH  &kp AMPERSAND     &kp EXCLAMATION    &kp HASH       &kp DOLLAR        &trans
 &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN  &trans
 &trans  &trans          &trans           &trans                &trans                 &trans       &trans         &trans            &trans             &trans         &trans            &trans
@@ -29,11 +43,11 @@
 
         function_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &bt BT_NXT  &trans  &trans  &trans  &bt BT_CLR  &bt BT_CLR_ALL
-&trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans      &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans      &trans
-&trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans  &trans  &trans  &trans      &trans
-                                          &trans        &trans        &trans    &trans      &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &bt BT_NXT  &trans         &trans                &trans              &bt BT_CLR     &bt BT_CLR_ALL
+&trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans         &trans                &trans              &trans         &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans      &mt LEFT HOME  &mt DOWN_ARROW PG_DN  &mt UP_ARROW PG_UP  &mt RIGHT END  &trans
+&trans        &trans        &trans        &trans        &trans        &trans    &trans      &trans         &trans                &trans              &trans         &trans
+                                          &trans        &trans        &trans    &trans      &trans         &trans
             >;
         };
 
