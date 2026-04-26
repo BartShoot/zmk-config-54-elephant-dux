@@ -19,7 +19,7 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <0 1>;
         };
     };
 
